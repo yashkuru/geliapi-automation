@@ -1,9 +1,11 @@
 import logging
 import os
 import pytest
+
 from lib.run_api import APIRunner
 
 
+# fixture to handle app logging
 @pytest.fixture(scope="session")
 def api_logger(loglevel="INFO"):
     test_logger = logging.getLogger("geli_api_logger")
@@ -19,25 +21,23 @@ def api_logger(loglevel="INFO"):
     return test_logger
 
 
+# fixture returns a wrapper around api to be used in different tests
 @pytest.fixture(scope="session")
 def api_wrapper():
     return APIRunner()
 
 
+# fixture returns a given site ids solar capacity
 @pytest.fixture
 def get_site_solar_cap(site_id, api_logger, api_wrapper):
     site_capacity = 0
-    print(site_id)
     response = api_wrapper.run_api(api_logger, "GET", f"/sites/{site_id}")
-    print("response-si", response)
-    print("response-st", response)
-    if response is not None:
+    if response.json():
         site_capacity = response.json()['solar_capacity']
-        return site_capacity
-    else:
-        return response
+    return site_capacity
 
 
+# fixture returns a given vpp id's total capacity
 @pytest.fixture
 def get_vpp_total_cap(vpp_id, api_logger, api_wrapper):
     total_capacity = 0
