@@ -24,36 +24,18 @@ def api_wrapper():
     return APIRunner()
 
 
-# @pytest.fixture
-# def site_id():
-#     return 10
-
-
 @pytest.fixture
 def get_site_solar_cap(site_id, api_logger, api_wrapper):
     site_capacity = 0
     print(site_id)
     response = api_wrapper.run_api(api_logger, "GET", f"/sites/{site_id}")
-    if response.json():
+    print("response-si", response)
+    print("response-st", response)
+    if response is not None:
         site_capacity = response.json()['solar_capacity']
-    yield site_capacity
-
-
-@pytest.fixture
-def get_site_solar_cap_dup(site_id, api_logger, api_wrapper):
-    # print("------>",request.param)
-    # site_id = request.param
-    site_capacity = 0
-    print(site_id)
-    response = api_wrapper.run_api(api_logger, "GET", f"/sites/{site_id}")
-    if response.json():
-        site_capacity = response.json()['solar_capacity']
-    yield site_capacity
-
-
-# @pytest.fixture
-# def vpp_id():
-#     return 2
+        return site_capacity
+    else:
+        return response
 
 
 @pytest.fixture
@@ -63,4 +45,4 @@ def get_vpp_total_cap(vpp_id, api_logger, api_wrapper):
     response = api_wrapper.run_api(api_logger, "GET", f"/vpps/{vpp_id}")
     if response.json():
         total_capacity = response.json()['total_capacity']
-    yield total_capacity
+    return total_capacity
