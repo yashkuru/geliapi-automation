@@ -2,13 +2,13 @@ class TestGeliGetVpp:
 
     # test retrieves information about a valid VPP and checks if correct VPP details are returned.
     def test_get_vpp(self, api_logger, api_wrapper):
-        vpp_id = 2
+        vpp_id = 1
         response = api_wrapper.run_api(api_logger, "GET", f"/vpps/{vpp_id}")
         assert response.status_code == 200
         vpp = response.json()
         assert vpp['id'] == vpp_id
-        assert vpp['name'] == "vpp2"
-        assert vpp["total_capacity"] == 20000
+        assert vpp['name'] == "vpp1"
+        assert vpp["total_capacity"] == 10000
 
     # test attempts to retrieve information about an invalid VPP and checks that the response status code is 404.
     def test_get_vpp_invalid(self, api_logger, api_wrapper):
