@@ -4,14 +4,18 @@ import pytest
 class TestGeliDeleteVpp:
 
     # test verifies for a valid delete case - throws assertion error due to a bug in app code
-    @pytest.mark.parametrize("site_id, vpp_id", [(2, 2)])
+    @pytest.mark.parametrize("site_id, vpp_id", [(6, 2)])
     def test_delete_vpp(self, api_logger, api_wrapper, site_id, get_site_solar_cap, vpp_id, get_vpp_total_cap):
         # Setup is done in the fixtures to get site solar capacity and vpp's total capacity
         api_logger.info(f"Setup: site_id {site_id} has solar capacity {get_site_solar_cap}")
         api_logger.info(f"Setup: vpp {vpp_id} has total capacity {get_vpp_total_cap}")
 
-        # Actual test
+        # Post a vpp and later use this to run delete API
         payload = {"site_id": site_id}
+        response = api_wrapper.run_api(api_logger, "POST", f"/vpps/{vpp_id}/sites", json=payload)
+        assert response.status_code == 200
+
+        # Actual test
         response = api_wrapper.run_api(api_logger, "DELETE", f"/vpps/{vpp_id}/sites", json=payload)
         assert response.status_code == 200
 

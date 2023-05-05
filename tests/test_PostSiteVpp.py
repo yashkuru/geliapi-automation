@@ -48,7 +48,7 @@ class TestGeliPostVpp:
         assert response.status_code == 400, f"Expected 400 because given payload has wrong keyid"
 
     # Tests if POST works on already existing site id
-    @pytest.mark.parametrize("site_id, vpp_id", [(3, 2)])
+    @pytest.mark.parametrize("site_id, vpp_id", [(9, 2)])
     def test_post_vpp_dup_site(self, api_logger, api_wrapper, site_id, vpp_id):
         payload = {"site_id": site_id}
         response = api_wrapper.run_api(api_logger, "POST", f"/vpps/{vpp_id}/sites", json=payload)
