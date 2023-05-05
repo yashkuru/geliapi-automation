@@ -1,0 +1,152 @@
+2023-05-05 04:51:52,267 geli_api_logger INFO   GET/sites/1 None <Response [200]>
+2023-05-05 04:51:52,289 geli_api_logger INFO   GET/sites/111 None <Response [404]>
+2023-05-05 04:51:52,306 geli_api_logger INFO   GET/sites/None None <Response [404]>
+2023-05-05 04:51:52,326 geli_api_logger INFO   GET/sites/abcd None <Response [404]>
+2023-05-05 04:52:22,325 geli_api_logger INFO   GET/sites/1 None 200
+2023-05-05 04:52:22,345 geli_api_logger INFO   GET/sites/111 None 404
+2023-05-05 04:52:22,354 geli_api_logger INFO   GET/sites/None None 404
+2023-05-05 04:52:22,369 geli_api_logger INFO   GET/sites/abcd None 404
+2023-05-05 04:56:09,756 geli_api_logger INFO   GET/sites None 200
+2023-05-05 04:56:09,758 geli_api_logger INFO   [{'id': 1, 'name': 'mysite1', 'solar_capacity': 10000}, {'id': 2, 'name': 'mysite2', 'solar_capacity': 10000}, {'id': 3, 'name': 'mysite3', 'solar_capacity': 10000}, {'id': 4, 'name': 'mysite4', 'solar_capacity': 10000}, {'id': 5, 'name': 'mysite5', 'solar_capacity': 10000}, {'id': 6, 'name': 'mysite6', 'solar_capacity': 10000}, {'id': 7, 'name': 'mysite7', 'solar_capacity': 10000}, {'id': 8, 'name': 'mysite8', 'solar_capacity': 10000}, {'id': 9, 'name': 'mysite9', 'solar_capacity': 10000}, {'id': 10, 'name': 'mysite10', 'solar_capacity': 10000}]
+2023-05-05 05:04:12,175 geli_api_logger INFO   GET/sites/1 None 200 {"id":1,"name":"mysite1","solar_capacity":10000}
+
+2023-05-05 05:04:12,185 geli_api_logger INFO   GET/sites/111 None 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2023-05-05 05:04:12,199 geli_api_logger INFO   GET/sites/None None 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2023-05-05 05:04:12,218 geli_api_logger INFO   GET/sites/abcd None 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2023-05-05 05:04:48,501 geli_api_logger INFO   GET/sites/1 None 200 OK
+2023-05-05 05:04:48,518 geli_api_logger INFO   GET/sites/111 None 404 NOT FOUND
+2023-05-05 05:04:48,542 geli_api_logger INFO   GET/sites/None None 404 NOT FOUND
+2023-05-05 05:04:48,572 geli_api_logger INFO   GET/sites/abcd None 404 NOT FOUND
+2023-05-05 05:05:19,282 geli_api_logger INFO   GET/sites/1 None 200 OK []
+2023-05-05 05:05:19,301 geli_api_logger INFO   GET/sites/111 None 404 NOT FOUND []
+2023-05-05 05:05:19,324 geli_api_logger INFO   GET/sites/None None 404 NOT FOUND []
+2023-05-05 05:05:19,341 geli_api_logger INFO   GET/sites/abcd None 404 NOT FOUND []
+2023-05-05 05:05:57,078 geli_api_logger INFO   GET/sites/1 None 200 OK <urllib3.response.HTTPResponse object at 0x7fd6335e7f50>
+2023-05-05 05:05:57,091 geli_api_logger INFO   GET/sites/111 None 404 NOT FOUND <urllib3.response.HTTPResponse object at 0x7fd6335dc450>
+2023-05-05 05:05:57,108 geli_api_logger INFO   GET/sites/None None 404 NOT FOUND <urllib3.response.HTTPResponse object at 0x7fd6335dc590>
+2023-05-05 05:05:57,133 geli_api_logger INFO   GET/sites/abcd None 404 NOT FOUND <urllib3.response.HTTPResponse object at 0x7fd6335dc450>
+2023-05-05 05:06:18,876 geli_api_logger INFO   GET/sites/1 None 200 OK {'Server': 'Werkzeug/2.3.3 Python/3.10.0', 'Date': 'Fri, 05 May 2023 12:06:18 GMT', 'Content-Type': 'application/json', 'Content-Length': '49', 'Connection': 'close'}
+2023-05-05 05:06:18,893 geli_api_logger INFO   GET/sites/111 None 404 NOT FOUND {'Server': 'Werkzeug/2.3.3 Python/3.10.0', 'Date': 'Fri, 05 May 2023 12:06:18 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '207', 'Connection': 'close'}
+2023-05-05 05:06:18,911 geli_api_logger INFO   GET/sites/None None 404 NOT FOUND {'Server': 'Werkzeug/2.3.3 Python/3.10.0', 'Date': 'Fri, 05 May 2023 12:06:18 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '207', 'Connection': 'close'}
+2023-05-05 05:06:18,922 geli_api_logger INFO   GET/sites/abcd None 404 NOT FOUND {'Server': 'Werkzeug/2.3.3 Python/3.10.0', 'Date': 'Fri, 05 May 2023 12:06:18 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '207', 'Connection': 'close'}
+2023-05-05 05:06:49,932 geli_api_logger INFO   GET/sites/1 None 200 OK http://127.0.0.1:5000/sites/1
+2023-05-05 05:06:49,946 geli_api_logger INFO   GET/sites/111 None 404 NOT FOUND http://127.0.0.1:5000/sites/111
+2023-05-05 05:06:49,967 geli_api_logger INFO   GET/sites/None None 404 NOT FOUND http://127.0.0.1:5000/sites/None
+2023-05-05 05:06:49,982 geli_api_logger INFO   GET/sites/abcd None 404 NOT FOUND http://127.0.0.1:5000/sites/abcd
+2023-05-05 05:09:48,426 geli_api_logger INFO   GET/sites/2 None 200 OK http://127.0.0.1:5000/sites/2
+2023-05-05 05:09:48,436 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:09:48,438 geli_api_logger INFO   Setup: site_id 2 has solar capacity 10000
+2023-05-05 05:09:48,438 geli_api_logger INFO   Setup: vpp 2 has total capacity 40000
+2023-05-05 05:09:48,464 geli_api_logger INFO   DELETE/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:09:48,551 geli_api_logger INFO   DELETE/vpps/2/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:09:48,573 geli_api_logger INFO   GET/sites/1 None 200 OK http://127.0.0.1:5000/sites/1
+2023-05-05 05:09:48,590 geli_api_logger INFO   GET/sites/111 None 404 NOT FOUND http://127.0.0.1:5000/sites/111
+2023-05-05 05:09:48,607 geli_api_logger INFO   GET/sites/None None 404 NOT FOUND http://127.0.0.1:5000/sites/None
+2023-05-05 05:09:48,628 geli_api_logger INFO   GET/sites/abcd None 404 NOT FOUND http://127.0.0.1:5000/sites/abcd
+2023-05-05 05:09:48,643 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:09:48,643 geli_api_logger INFO   [{'id': 1, 'name': 'mysite1', 'solar_capacity': 10000}, {'id': 2, 'name': 'mysite2', 'solar_capacity': 10000}, {'id': 3, 'name': 'mysite3', 'solar_capacity': 10000}, {'id': 4, 'name': 'mysite4', 'solar_capacity': 10000}, {'id': 5, 'name': 'mysite5', 'solar_capacity': 10000}, {'id': 6, 'name': 'mysite6', 'solar_capacity': 10000}, {'id': 7, 'name': 'mysite7', 'solar_capacity': 10000}, {'id': 8, 'name': 'mysite8', 'solar_capacity': 10000}, {'id': 9, 'name': 'mysite9', 'solar_capacity': 10000}, {'id': 10, 'name': 'mysite10', 'solar_capacity': 10000}]
+2023-05-05 05:09:48,661 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:09:48,681 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:09:48,696 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:09:48,709 geli_api_logger INFO   GET/vpps/44 None 404 NOT FOUND http://127.0.0.1:5000/vpps/44
+2023-05-05 05:09:48,724 geli_api_logger INFO   GET/vpps/ None 404 NOT FOUND http://127.0.0.1:5000/vpps/
+2023-05-05 05:09:48,753 geli_api_logger INFO   GET/vpps None 200 OK http://127.0.0.1:5000/vpps
+2023-05-05 05:09:48,771 geli_api_logger INFO   GET/vpps None 200 OK http://127.0.0.1:5000/vpps
+2023-05-05 05:09:48,793 geli_api_logger INFO   GET/vpps None 200 OK http://127.0.0.1:5000/vpps
+2023-05-05 05:09:48,813 geli_api_logger INFO   GET/sites/9 None 200 OK http://127.0.0.1:5000/sites/9
+2023-05-05 05:09:48,823 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:09:48,825 geli_api_logger INFO   Setup: site_id 9 has solar capacity 10000
+2023-05-05 05:09:48,826 geli_api_logger INFO   Setup: vpp 2 has total capacity 40000
+2023-05-05 05:09:48,846 geli_api_logger INFO   POST/vpps/2/sites None 409 CONFLICT http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:09:48,923 geli_api_logger INFO   POST/vpps/3/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/3/sites
+2023-05-05 05:09:48,953 geli_api_logger INFO   POST/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:09:48,987 geli_api_logger INFO   POST/vpps/33/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/33/sites
+2023-05-05 05:09:49,017 geli_api_logger INFO   POST/vpps/33/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/33/sites
+2023-05-05 05:09:49,041 geli_api_logger INFO   POST/vpps/2/sites None 409 CONFLICT http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:10:02,178 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:10:02,179 geli_api_logger INFO   [{'id': 1, 'name': 'mysite1', 'solar_capacity': 10000}, {'id': 2, 'name': 'mysite2', 'solar_capacity': 10000}, {'id': 3, 'name': 'mysite3', 'solar_capacity': 10000}, {'id': 4, 'name': 'mysite4', 'solar_capacity': 10000}, {'id': 5, 'name': 'mysite5', 'solar_capacity': 10000}, {'id': 6, 'name': 'mysite6', 'solar_capacity': 10000}, {'id': 7, 'name': 'mysite7', 'solar_capacity': 10000}, {'id': 8, 'name': 'mysite8', 'solar_capacity': 10000}, {'id': 9, 'name': 'mysite9', 'solar_capacity': 10000}, {'id': 10, 'name': 'mysite10', 'solar_capacity': 10000}]
+2023-05-05 05:10:02,187 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:10:02,196 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:13:52,783 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:13:52,865 geli_api_logger INFO   GET/vpps/44 None 404 NOT FOUND http://127.0.0.1:5000/vpps/44
+2023-05-05 05:13:52,881 geli_api_logger INFO   GET/vpps/ None 404 NOT FOUND http://127.0.0.1:5000/vpps/
+2023-05-05 05:23:39,302 geli_api_logger INFO   POST/vpps/3/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/3/sites
+2023-05-05 05:24:33,352 geli_api_logger INFO   GET/sites/9 None 200 OK http://127.0.0.1:5000/sites/9
+2023-05-05 05:24:33,360 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:24:33,362 geli_api_logger INFO   Setup: site_id 9 has solar capacity 10000
+2023-05-05 05:24:33,362 geli_api_logger INFO   Setup: vpp 2 has total capacity 20000
+2023-05-05 05:24:33,632 geli_api_logger INFO   POST/vpps/2/sites None 200 OK http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:24:33,636 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:24:33,649 geli_api_logger INFO   POST/vpps/3/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/3/sites
+2023-05-05 05:24:33,668 geli_api_logger INFO   POST/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:24:33,691 geli_api_logger INFO   POST/vpps/33/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/33/sites
+2023-05-05 05:24:33,709 geli_api_logger INFO   POST/vpps/33/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/33/sites
+2023-05-05 05:24:33,730 geli_api_logger INFO   POST/vpps/2/sites None 409 CONFLICT http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:32:47,075 geli_api_logger INFO   GET/sites/2 None 200 OK http://127.0.0.1:5000/sites/2
+2023-05-05 05:32:47,087 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:32:47,089 geli_api_logger INFO   Setup: site_id 2 has solar capacity 10000
+2023-05-05 05:32:47,090 geli_api_logger INFO   Setup: vpp 2 has total capacity 30000
+2023-05-05 05:32:47,105 geli_api_logger INFO   DELETE/vpps/2/sites None 200 OK http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:32:47,113 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:32:47,295 geli_api_logger INFO   DELETE/vpps/2/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:32:47,328 geli_api_logger INFO   DELETE/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:33:17,768 geli_api_logger INFO   DELETE/vpps/2/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:33:35,295 geli_api_logger INFO   GET/sites/2 None 200 OK http://127.0.0.1:5000/sites/2
+2023-05-05 05:33:35,304 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:33:35,305 geli_api_logger INFO   Setup: site_id 2 has solar capacity 10000
+2023-05-05 05:33:35,306 geli_api_logger INFO   Setup: vpp 2 has total capacity 40000
+2023-05-05 05:33:35,315 geli_api_logger INFO   DELETE/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:33:35,480 geli_api_logger INFO   DELETE/vpps/45/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/45/sites
+2023-05-05 05:33:35,507 geli_api_logger INFO   DELETE/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:33:35,538 geli_api_logger INFO   DELETE/vpps/2/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:37:41,255 geli_api_logger INFO   GET/sites/2 None 200 OK http://127.0.0.1:5000/sites/2
+2023-05-05 05:37:41,261 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:37:41,262 geli_api_logger INFO   Setup: site_id 2 has solar capacity 10000
+2023-05-05 05:37:41,262 geli_api_logger INFO   Setup: vpp 2 has total capacity 20000
+2023-05-05 05:37:41,282 geli_api_logger INFO   DELETE/vpps/2/sites None 200 OK http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:37:41,289 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:37:41,402 geli_api_logger INFO   DELETE/vpps/45/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/45/sites
+2023-05-05 05:37:41,430 geli_api_logger INFO   DELETE/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:37:41,464 geli_api_logger INFO   DELETE/vpps/2/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:37:41,494 geli_api_logger INFO   GET/sites/1 None 200 OK http://127.0.0.1:5000/sites/1
+2023-05-05 05:37:41,510 geli_api_logger INFO   GET/sites/111 None 404 NOT FOUND http://127.0.0.1:5000/sites/111
+2023-05-05 05:37:41,526 geli_api_logger INFO   GET/sites/None None 404 NOT FOUND http://127.0.0.1:5000/sites/None
+2023-05-05 05:37:41,546 geli_api_logger INFO   GET/sites/abcd None 404 NOT FOUND http://127.0.0.1:5000/sites/abcd
+2023-05-05 05:37:41,565 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:37:41,565 geli_api_logger INFO   [{'id': 1, 'name': 'mysite1', 'solar_capacity': 10000}, {'id': 2, 'name': 'mysite2', 'solar_capacity': 10000}, {'id': 3, 'name': 'mysite3', 'solar_capacity': 10000}, {'id': 4, 'name': 'mysite4', 'solar_capacity': 10000}, {'id': 5, 'name': 'mysite5', 'solar_capacity': 10000}, {'id': 6, 'name': 'mysite6', 'solar_capacity': 10000}, {'id': 7, 'name': 'mysite7', 'solar_capacity': 10000}, {'id': 8, 'name': 'mysite8', 'solar_capacity': 10000}, {'id': 9, 'name': 'mysite9', 'solar_capacity': 10000}, {'id': 10, 'name': 'mysite10', 'solar_capacity': 10000}]
+2023-05-05 05:37:41,586 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:37:41,605 geli_api_logger INFO   GET/sites None 200 OK http://127.0.0.1:5000/sites
+2023-05-05 05:37:41,636 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:37:41,705 geli_api_logger INFO   GET/vpps/44 None 404 NOT FOUND http://127.0.0.1:5000/vpps/44
+2023-05-05 05:37:41,728 geli_api_logger INFO   GET/vpps/ None 404 NOT FOUND http://127.0.0.1:5000/vpps/
+2023-05-05 05:37:41,756 geli_api_logger INFO   GET/vpps None 200 OK http://127.0.0.1:5000/vpps
+2023-05-05 05:37:41,779 geli_api_logger INFO   GET/vpps None 200 OK http://127.0.0.1:5000/vpps
+2023-05-05 05:37:41,807 geli_api_logger INFO   GET/vpps None 200 OK http://127.0.0.1:5000/vpps
+2023-05-05 05:37:41,835 geli_api_logger INFO   GET/sites/9 None 200 OK http://127.0.0.1:5000/sites/9
+2023-05-05 05:37:41,850 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:37:41,855 geli_api_logger INFO   Setup: site_id 9 has solar capacity 10000
+2023-05-05 05:37:41,855 geli_api_logger INFO   Setup: vpp 2 has total capacity 30000
+2023-05-05 05:37:41,870 geli_api_logger INFO   POST/vpps/2/sites None 200 OK http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:37:41,881 geli_api_logger INFO   GET/vpps/2 None 200 OK http://127.0.0.1:5000/vpps/2
+2023-05-05 05:37:41,904 geli_api_logger INFO   POST/vpps/3/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/3/sites
+2023-05-05 05:37:41,929 geli_api_logger INFO   POST/vpps/2/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 05:37:41,952 geli_api_logger INFO   POST/vpps/33/sites None 404 NOT FOUND http://127.0.0.1:5000/vpps/33/sites
+2023-05-05 05:37:41,978 geli_api_logger INFO   POST/vpps/33/sites None 400 BAD REQUEST http://127.0.0.1:5000/vpps/33/sites
+2023-05-05 05:37:42,002 geli_api_logger INFO   POST/vpps/2/sites None 409 CONFLICT http://127.0.0.1:5000/vpps/2/sites
+2023-05-05 12:17:36,207 geli_api_logger INFO   GET/vpps/1 None 200 OK http://127.0.0.1:5000/vpps/1
+2023-05-05 12:17:49,712 geli_api_logger INFO   GET/vpps/1 None 200 OK http://127.0.0.1:5000/vpps/1
