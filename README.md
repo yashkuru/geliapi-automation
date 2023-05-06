@@ -5,9 +5,11 @@ This project aims at creating an automation framework on top of which required A
 Install the required pip packages for the project 
 > `pip install -r requirements.txt`
 
-Simply run the below command which runs all the pytest scripts under tests folder
+Simply run one of the below commands which runs all the pytest scripts under tests folder
 Also generates a html report under reports dir
 >`pytest -v tests --html=reports/pytest_report.html`
+
+> `python3.8 -m pytest -v tests --html=reports/pytest_report.html`
 
 logs dir will save all the API calls made by the test script
 
